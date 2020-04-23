@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея Аси</title>
+    <link rel="stylesheet" type="text/css" href="css/catPage.css">
+</head>
+<body>
+<section>
+    <header>
+        <img src="other/cat_logo.png" width="130" class="leftLogo">
+        <a href="mainpage.html">
+            <h1>КотоФото.KeK</h1>
+        </a>
+        <img src="other/cat_logo.png" width="130" class="rightLogo">
+    </header>
+    <div class="sidebar">
+    </div>
+    <div class="cardList">
+        <div class="title">
+            <h2></h2>
+        </div>
+        <div class="aboutCat">
+            <p></p>
+        </div>
+        <div class="allPhoto">
+        </div>
+    </div>
+    <footer>
+        <a href="#">
+            <p>VK</p>
+        </a>
+        <a href="#">
+            <p>Instagram</p>
+        </a>
+    </footer>
+    <!-- POP-UP -->
+    <!-- entry -->
+    <div class="entry hidden">
+        <form class="login">
+            <label for="name">Ваш логин:</label>
+
+            <input type="text" id="name" name="name">
+
+            <label for="password">Ваш пароль:</label>
+
+            <input type="password" id="password" name="password">
+
+            <label>
+                <input type="checkbox">
+                Сохранить пароль
+            </label>
+
+            <button>Войти</button>
+        </form>
+        <div class="registration">
+            <div></div>
+            <img src="other/cat_logo.png" >
+            <button>Регистрация</button>
+        </div>
+    </div>
+    <!-- photo card -->
+    <div class="popup-container hidden">
+        <div class="close-button">
+            <button class="close">close</button>
+        </div>
+        <div class="photo-container">
+            <img src="" class="bigImg" width="100%"  >
+        </div>
+        <div class="side-block">
+            <div class="like-container">
+                <span class="catDescription">описание котика</span>
+                <button class="heart">like</button>
+            </div>
+            <div class="comment">
+                <div class="comment-container">
+
+                </div>
+                <form class="input-field" method="post">
+                    <input class="chat-form-input" type="text" placeholder="напишите что вы об этом думаете" required>
+                    <input type="button" value="отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- pop-up ending -->
+</section>
+<template id="message-template">
+    <div class="chat-message" tabindex="0">
+        <span class="chat-message-name">Зарегистрированный пользователь</span>
+        <p class="chat-message-text"></p>
+        <button class="chat-message-button" type="button">Удалить</button>
+    </div>
+</template>
+<script src="js/asyaPhotoCards.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/showPhoto.js"></script>
+</body>
+</html>
